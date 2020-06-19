@@ -2,7 +2,7 @@
   (fp_text reference REF** (at 0.2 0) (layer F.SilkS)
     (effects (font (size 1.2 1.2) (thickness 0.15)))
   )
-  (fp_text value WM-N-BM-14 (at 0.2 10.6) (layer F.Fab)
+  (fp_text value WM_N_BM_14 (at 0.2 10.6) (layer F.Fab)
     (effects (font (size 1.2 1.2) (thickness 0.15)))
   )
   (fp_line (start -9.9 -3.2) (end -9.9 13.8) (layer F.SilkS) (width 0.15))
