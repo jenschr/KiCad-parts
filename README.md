@@ -2,15 +2,9 @@
 I'll add schematics, footprints and scripts that I've made for KiCad here as I go.
 
 ## SchematicPositionsToLayout.py
-If you are moving from schematic to layout on a large board, it is extremely annying that Kicad imports all parts as a random lump of footprints. This simple script will take two files as parameters: a Kicad 5 schematic (.sch) and a PCB Layout (.kicad_pcb) file. The script lays out all the components in the PCB file on positions that mimic those in the Schematic
+If you are moving from schematic to layout on a large board, it is extremely annying that Kicad imports all parts as a random lump of footprints. [This simple script](plugins/SchematicPositionsToLayout.py) will take two files as parameters: a Kicad 5 schematic (.sch) and a PCB Layout (.kicad_pcb) file. The script lays out all the components in the PCB file on positions that mimic those in the Schematic. This saves a lot of time the first time you lay out a board.
 
-For the script to work, you'll need to finish your schematic and then import the schematic into a .kicad_pcb file. You can then use these two files as your input to this script. It then creates the file 'new.kicad_pcb' in your current folder that you can then use for laying out your board.
-
-Note that the script is provided 'as is' and I make no warranties whatsover, but it can potentially shave off hours of layout time trying to look where each of your 500+ parts should be... For the script to work, you'll need to have Python installed. I used python 2.7, but PR's for 3.x suport is welcome!
-
-Copy the script to any folder and execute it like this:
-
-    python /Users/jensa/Documents/SchematicPositionsToLayout.py /Users/jensa/Documents/myboard.sch /Users/jensa/Documents/myboard.kicad_pcb
+[Ian Ross](https://github.com/ian-ross) converted my quick-n-dirty script to a full Kicad Plugin and added support for Hierical sheets.
 
 ## USI WM-N-BM-14 (WICED Module)
 The parts you need to make your own hardware based on the [Particle.io P1 module](https://docs.particle.io/datasheets/p1-datasheet/). The schematic for the wm-n-bm-14 module is the first schematic I ever made for KiCad, so the pins are in chronological order (rather than functional). I might re-arrange that at a later time as I now realize it's not very convenient. The footprint reflowed perfectly on my first two PCBs using this module, so it's been tested & works as it should. The lib includes footprints for using with both the integrated PCB antenna or with the u.Fl connector (PCB antenna broken off to save space).
